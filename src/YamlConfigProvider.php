@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Antidot\Yaml;
 
+use RuntimeException;
 use Symfony\Component\Yaml\Yaml as YamlParser;
-use Zend\Config\Exception\RuntimeException;
 use Zend\Config\Reader\Yaml;
 use Zend\ConfigAggregator\GlobTrait;
 
