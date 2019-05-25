@@ -46,7 +46,7 @@ class YamlConfigProvider
             $config[] = $this->fromFile($file);
         }
 
-        return array_merge(...$config);
+        return array_replace_recursive(...$config) ?? [];
     }
 
     private function fromFile($filename): array
