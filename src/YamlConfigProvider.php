@@ -4,22 +4,18 @@ declare(strict_types=1);
 
 namespace Antidot\Yaml;
 
+use Laminas\Config\Reader\Yaml;
+use Laminas\ConfigAggregator\GlobTrait;
 use RuntimeException;
 use Symfony\Component\Yaml\Yaml as YamlParser;
-use Zend\Config\Reader\Yaml;
-use Zend\ConfigAggregator\GlobTrait;
 
 class YamlConfigProvider
 {
     use GlobTrait;
 
-    /** @var string */
-    private $pattern;
+    private string $pattern;
 
-    /**
-     * @param string $pattern Glob pattern.
-     */
-    public function __construct($pattern)
+    public function __construct(string $pattern)
     {
         $this->pattern = $pattern;
     }
@@ -32,7 +28,7 @@ class YamlConfigProvider
      *
      * @return array
      */
-    public function __invoke()
+    public function __invoke(): array
     {
         $files = $this->glob($this->pattern);
 
