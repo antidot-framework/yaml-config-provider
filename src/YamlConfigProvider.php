@@ -26,7 +26,7 @@ class YamlConfigProvider
      * Globs the given files, and passes the result to ConfigFactory::fromFiles
      * for purposes of returning merged configuration.
      *
-     * @return array
+     * @return array<mixed>
      */
     public function __invoke(): array
     {
@@ -35,6 +35,10 @@ class YamlConfigProvider
         return $this->fromFiles($files);
     }
 
+    /**
+     * @param array<mixed> $files
+     * @return array<mixed>
+     */
     private function fromFiles(array $files): array
     {
         $config = [[]];
@@ -45,7 +49,10 @@ class YamlConfigProvider
         return array_replace_recursive(...$config) ?? [];
     }
 
-    private function fromFile($filename): array
+    /**
+     * @return array<mixed>
+     */
+    private function fromFile(string $filename): array
     {
         $filepath = $filename;
         if (!file_exists($filename)) {
