@@ -12,7 +12,7 @@
         }
     ],
     "require": {
-        "php": "^7.4.0",
+        "php": "^7.4.0|^8.0",
         "symfony/yaml": "^5.1.0",
         "laminas/laminas-config": "^3.2.0",
         "laminas/laminas-config-aggregator": "^1.1.1"
@@ -39,10 +39,10 @@
             "@test",
             "@inspect"
         ],
-        "cs-check": "phpcs src --colors",
-        "cs-fix": "phpcbf src --colors",
+        "cs-check": "phpcs src",
+        "cs-fix": "phpcbf src",
         "inspect": "phpstan analyse src -l7 --ansi",
-        "test": "phpunit --colors=always"
+        "test": "phpunit"
     },
     "config": {
         "sort-packages": true
