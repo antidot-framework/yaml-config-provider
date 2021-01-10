@@ -1,8 +1,22 @@
 # Changelog
 
-## [0.1.1](https://github.com/antidot-framework/yaml-config-provider/tree/HEAD)
+## [0.1.2](https://github.com/antidot-framework/yaml-config-provider/tree/0.1.2) (2021-01-10)
 
-[Full Changelog](https://github.com/antidot-framework/yaml-config-provider/compare/0.1.0...HEAD)
+[Full Changelog](https://github.com/antidot-framework/yaml-config-provider/compare/0.1.1...0.1.2)
+
+**Implemented enhancements:**
+
+- add php8 support [\#8](https://github.com/antidot-framework/yaml-config-provider/pull/8) ([kpicaza](https://github.com/kpicaza))
+
+**Merged pull requests:**
+
+- Update phpro/grumphp requirement from ~0.17 to ~0.17 || ~1.0 [\#7](https://github.com/antidot-framework/yaml-config-provider/pull/7) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update phpro/grumphp requirement from ^0.17.0 || ^0.19.0 || ^0.21.0 to ^0.17.0 || ^0.19.0 || ^0.21.0 || ^0.22.0 [\#6](https://github.com/antidot-framework/yaml-config-provider/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update phpro/grumphp requirement from ^0.17.0 || ^0.19.0 to ^0.17.0 || ^0.19.0 || ^0.21.0 [\#5](https://github.com/antidot-framework/yaml-config-provider/pull/5) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [0.1.1](https://github.com/antidot-framework/yaml-config-provider/tree/0.1.1) (2020-07-14)
+
+[Full Changelog](https://github.com/antidot-framework/yaml-config-provider/compare/0.1.0...0.1.1)
 
 **Merged pull requests:**
 
